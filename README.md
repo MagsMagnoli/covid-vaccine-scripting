@@ -2,6 +2,8 @@
 
 A repository for checking various outlets for available covid 19 appointment availabilities
 
-### Outlets
+### CVS
+A python script for requesting appointments by city and state
+Sends requests on a 10 second interval
 
-* cvs - python script for requesting appointments by city and state
+![image](https://user-images.githubusercontent.com/4146037/112877649-0696b900-9095-11eb-9d03-e64077adffea.png)
