@@ -4,10 +4,10 @@ import time
 import datetime
 
 # change this value to your state abbreviation
-state = ''
+state = 'ct'
 
 # change this value to the names of the cities to track
-cities = []
+cities = ['manchester']
 
 # text returned indicating city is booked
 booked_text = 'Fully Booked'
@@ -54,20 +54,20 @@ while True:
         else:
             print('Could not find city {}'.format(city))
 
+    # print open city statuses
+    print()
+    print('CITIES WITH OPEN APPOINTMENTS')
+    print('-----------------------------')
+
     # if cities are open print them and exit request loop
     if len(open_cities) > 0:
-        print()
-        print('CITIES WITH OPEN APPOINTMENTS')
-        print('-----------------------------')
-
-        if len(open_cities) > 0:
-            for city in open_cities:
-                print(city)
-        
-            # exit loop because cities found
-            break
-        else:
-            print('None')
+        for city in open_cities:
+            print(city)
+    
+        # exit loop because cities found
+        break
+    else:
+        print('None')
 
     # update flag for output padding
     first_loop = False
