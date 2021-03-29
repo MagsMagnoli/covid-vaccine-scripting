@@ -48,7 +48,7 @@ while True:
         print('-----------------------------------')
         status = status_by_city[city.upper()]
         if status is not None:
-            if status == booked_text:
+            if status != booked_text:
                 open_cities.append(city)
             print('{}: {}'.format(city, status))
         else:
@@ -59,11 +59,15 @@ while True:
         print()
         print('CITIES WITH OPEN APPOINTMENTS')
         print('-----------------------------')
-        for city in open_cities:
-            print(city)
+
+        if len(open_cities) > 0:
+            for city in open_cities:
+                print(city)
         
-        # exit loop because cities found
-        break
+            # exit loop because cities found
+            break
+        else:
+            print('None')
 
     # update flag for output padding
     first_loop = False
