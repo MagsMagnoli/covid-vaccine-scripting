@@ -4,10 +4,10 @@ import time
 import datetime
 
 # change this value to your state abbreviation
-state = 'ct'
+state = 'tx'
 
 # change this value to the names of the cities to track
-cities = ['manchester']
+cities = ['austin', 'kyle', 'san marcos', 'round rock']
 
 # text returned indicating city is booked
 booked_text = 'Fully Booked'
